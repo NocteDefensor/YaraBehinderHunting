@@ -26,7 +26,7 @@ sudo wget https://raw.githubusercontent.com/volexity/threat-intel/main/2022/2022
 ```
 sudo su -
 ```
-- ALL that follows is one command
+- paste all that follows as one command
 ```
 LOGDATE=$(date +%Y%m%dT%H%M%S)
 /usr/local/bin/scan -j -r /YourIntendedScan/Path/ | jq '.' > /opt/yara_matches/"$LOGDATE".json
