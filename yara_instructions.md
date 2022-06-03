@@ -22,6 +22,7 @@ sudo wget https://raw.githubusercontent.com/volexity/threat-intel/main/2022/2022
 ` sudo mkdir -p /opt/yara_matches`
 
 - Test Shell script to scan your directory of web service
+  - Ensure you change target directory to match your intended directory
 
 ```
 sudo su -
@@ -46,11 +47,13 @@ nano yara_log.sh
 ```
 
 - Paste the script into the yara_log.sh within nano and then save by hitting control X and then Y
+  - Ensure you change target directory to match your intended directory
+
 
 ```
 #! /bin/bash
 LOGDATE=$(date +%Y%m%dT%H%M%S)                                                                                            
-/usr/local/bin/scan -j -r /home/kali/ | jq '.' > /opt/yara_matches/"$LOGDATE".json
+/usr/local/bin/scan -j -r /YourIntended/ScanTargetDirectory/ | jq '.' > /opt/yara_matches/"$LOGDATE".json
 ```
 
 - Make script executable for root only. 
