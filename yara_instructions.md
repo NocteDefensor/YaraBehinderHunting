@@ -19,7 +19,7 @@ sudo wget https://raw.githubusercontent.com/volexity/threat-intel/main/2022/2022
 ```
 - make Directory to store Yara Matches
 
-` mkdir -p /opt/yara_matches`
+` sudo mkdir -p /opt/yara_matches`
 
 - Test Shell script to scan your directory of web service
 
@@ -41,7 +41,6 @@ ls -l /opt/yara_matches/
 - Make script to run for chron
 
 ```
-sudo su -
 cd /root
 nano yara_log.sh
 ```
