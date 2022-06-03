@@ -8,7 +8,7 @@
 
 /* Rule Set ----------------------------------------------------------------- */
 
-rule _home_kali_yara_shell {
+rule _shell.jsp {
    meta:
       description = "yara - file shell.jsp"
       author = "mastadon"
