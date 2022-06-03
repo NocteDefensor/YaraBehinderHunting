@@ -38,7 +38,7 @@ LOGDATE=$(date +%Y%m%dT%H%M%S)
 ls -l /opt/yara_matches/
 ```
 
-- Make script to run for chron
+- Make script to run for cron
 
 ```
 cd /root
@@ -60,7 +60,7 @@ LOGDATE=$(date +%Y%m%dT%H%M%S)
 chmod u+x yara_log.sh
 chmod 744 yara_log.sh
 ```
-- Make chron job
+- Make cron job
   - Ensure you give sufficient interval for the cron job to finish if scanning directories with large amounts of files. Pay attention to how long it took for the test to finish and base interval off that. 
 
 ```
