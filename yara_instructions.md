@@ -69,7 +69,11 @@ chmod 744 yara_log.sh
 ```
 crontab -e
 ```
+## Use Cases
 
+- Off server scanning
+  - If you don't want to run YARA on the actual web server you can implement various methods of backing up or copying the webserver directories to another location and running yara against those directories.  This would be my preferred method.
+  - If you are running the yara scanner on the actual web server, then you will need to get the logs in /opt/yara_matches to another host for safe keeping and analysis. 
 
 ## CREDIT/References
 - Volexity
